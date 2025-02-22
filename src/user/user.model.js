@@ -6,9 +6,9 @@ const userSchema = Schema({
         required: true,
         unique: true
     },
-    gmail:{
+    email:{
         type: String,
-        required: [true, "gmail is required"],
+        required: [true, "email is required"],
         unique: true
     },
     password:{
@@ -18,8 +18,8 @@ const userSchema = Schema({
     role:{
         type: String,
         required: true,
-        enum: ["admin_role", "user_role"],
-        default: "user_role"
+        enum: ["ADMIN_ROLE", "USER_ROLE"],
+        default: "USER_ROLE"
     },
 
 }, 
